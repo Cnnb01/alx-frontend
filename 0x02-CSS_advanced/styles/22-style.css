@@ -498,17 +498,16 @@ ul.row {
     padding: 0;
     list-style: none;
 }
-
-.col-1-3 {
-    width: 33.33%;
+[class^="col-"]{
     float: left;
     padding: 0.5rem;
+}
+.col-1-3 {
+    width: 33.33%;
 }
 
 .col-1-2 {
     width: 50%;
-    float: left;
-    padding: 0.5rem;
 }
 .footer-copyright {
     margin: 0;
@@ -523,4 +522,11 @@ ul.row {
     content: "";
     display: table;
     clear: both;
+}
+
+/* dark theme */
+[data-section-theme=“dark”]{
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
 }
