@@ -381,7 +381,7 @@
       --section-body-padding: 0 0 3rem;
       --section-footer-padding: 3rem 0 0;
       --section-footer-align: center;
-       --section-tagline-margin: 0;
+      --section-tagline-margin: 0;
       --footer-padding: 5rem 0 1rem;
       /* navbar */
       --nav-item-font-family: var(--font-family-title);
@@ -542,6 +542,23 @@
       padding: 0.5rem;
   }
   
+  /* CARD SECTION  */
+  .card-services .card-title{
+    margin: 0;
+  }
+  
+  .card-services a {
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+  }
+  
+  .card-services a:hover {
+    color: var(--color-white);
+    background: var(--color-primary);
+    text-decoration: none;
+  }
+  
   
   /* FOOTER  */
   .footer {
@@ -558,6 +575,19 @@
       text-align: right;
   }
   
+  .footer-address {
+    color: var(--text-color);
+  }
+  
+  .social-link {
+    display: block;
+  }
+  
+  .social-link > svg {
+    fill: var(--text-color);
+  }
+  
+  
   
   /* CSS rule that creates a new row after each instance of the class row */
   .row::after {
@@ -572,26 +602,3 @@
       --section-title-color: var(--color-white);
       background-color: var(--color-black);
   }
-
-.footer-address{
-    color: var(--text-color);
-}
-.social-link{
-    display: block;
-}
-.social-link > svg {
-    fill: var(--text-color);
-}
-.card-services > .card-title{
-    margin:0px;
-}
-.card-services > a{
-    display: block;
-    padding: 2rem;
-    background-color: var(--color-light-grey);
-}
-.card-services > a:hover{
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    text-decoration: none;
-}
